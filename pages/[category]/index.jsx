@@ -61,7 +61,7 @@ export default function Category() {
                                             alt=""
                                             width={1000}
                                             height={1000}
-                                            />
+                                        />
                                     </div>
                                     <div className="md:w-3/4 p-3 md:h-full h-80">
                                         <h1 className="my-2 md:h-7 h-14 overflow-hidden text-xl font-bold text-gray-800">{post.title}</h1>
