@@ -3,14 +3,14 @@ import { useQuery } from "@apollo/client";
 import gql from "graphql-tag";
 import PostGrid from "../../components/PostGrid";
 import styles from "../../styles/Home.module.css";
-
 const fetchURL = async () => {
   const res = await fetch('https://www.dare2solve.com/');
-  return res.json();
+  // return res.json();const response = await res.json();
+  return res;
 }
 
-export default function Posts() {
-
+export default function Posts({post}) {
+console.log({post})
   const router = useRouter();
   const id = router.query.postId;
   const myPost = gql`
@@ -65,3 +65,15 @@ export default function Posts() {
     </div>
   );
 }
+
+// export async function getServerSideProps() {
+//   const res = await fetch('https://www.dare2solve.com/');
+//   // return res.json();
+//   const response = await res.json()
+//   console.log(response)
+//   return {
+//     props : {
+//       post : response,
+//     }
+//   }
+// }

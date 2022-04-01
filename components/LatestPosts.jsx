@@ -30,7 +30,13 @@ export default function LatestPosts() {
     variables: { after: null }
   });
 
-  if (error) return <div className={styles.error}><h1 className="text-center text-xl font-bold">Something went wrong.</h1></div>
+  if (error) {
+  return (<>
+    <h4>error.message</h4> 
+     <div className={styles.error}><h1 className="text-center text-xl font-bold">Something went wrong.</h1></div>
+   </>
+   )
+  }
   if (loading) return <div className={styles.loading}><div className="flex items-center justify-center space-x-2 animate-pulse pt-20">
     <div className="w-4 h-4 bg-blue-400 rounded-full"></div>
     <div className="w-4 h-4 bg-blue-400 rounded-full"></div>
@@ -50,7 +56,7 @@ export default function LatestPosts() {
         </div>
       </div>
       <Link href={`/math`} passHref><button className="flex text-white m-auto bg-pink-600 hover:bg-pink-700 focus:ring-1 focus:ring-pink-300 font-medium rounded-full md:text-sm text-xs my-6 md:px-5 px-3 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >Show All Posts</button></Link>
+      >Show All Posts</button></Link>
     </div>
   )
 }
