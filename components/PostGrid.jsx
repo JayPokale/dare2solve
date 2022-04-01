@@ -3,7 +3,7 @@ import gql from 'graphql-tag';
 import styles from "../styles/Home.module.css";
 import Link from "next/link"
 import Script from "next/script"
-import Image from "next/Image"
+import Image from "next/image"
 
 const fetchURL = async () => {
   const res = await fetch('https://www.dare2solve.com/');

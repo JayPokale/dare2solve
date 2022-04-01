@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
 import Link from "next/link"
-import Image from "next/Image"
+import Image from "next/image"
 
 const myLoader=({src})=>`${src}`
 
