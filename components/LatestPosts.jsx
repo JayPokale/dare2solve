@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 const fetchURL = async () => {
-  const res = await fetch('https://www.dare2solve.com/');
+  const res = await fetch('https://grp.akm.mybluehostin.me/dare2solve/');
   return res.json();
 }
 
@@ -32,7 +32,7 @@ export default function LatestPosts() {
 
   if (error) {
   return (<>
-    <h4>error.message</h4> 
+    <h4>{error.message}</h4> 
      <div className={styles.error}><h1 className="text-center text-xl font-bold">Something went wrong.</h1></div>
    </>
    )

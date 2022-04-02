@@ -4,9 +4,8 @@ import gql from "graphql-tag";
 import PostGrid from "../../components/PostGrid";
 import styles from "../../styles/Home.module.css";
 const fetchURL = async () => {
-  const res = await fetch('https://www.dare2solve.com/');
-  // return res.json();const response = await res.json();
-  return res;
+  const res = await fetch('https://grp.akm.mybluehostin.me/dare2solve/');
+  return res.json();
 }
 
 export default function Posts({post}) {

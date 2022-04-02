@@ -4,12 +4,15 @@ import Link from "next/link"
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
+	
 	return (
 		<nav className="bg-white shadow-sm fixed top-0 w-full z-20">
 			<div className="w-full">
 				<div className="flex items-center h-20 w-full">
 					<div className="flex items-center  mx-20  justify-between w-full">
 						<div className="flex justify-center items-center flex-shrink-0 ">
+							
+
 							<Link href="/" passHref>
 								<h1 className=" font-bold text-xl cursor-pointer">
 									Dare<span className="text-pink-600">2</span>Solve
