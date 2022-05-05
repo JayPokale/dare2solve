@@ -4,7 +4,7 @@ import gql from "graphql-tag";
 import PostGrid from "../../components/PostGrid";
 import styles from "../../styles/Home.module.css";
 const fetchURL = async () => {
-  const res = await fetch('https://grp.akm.mybluehostin.me/dare2solve/');
+  const res = await fetch('https://dare2solve.com/');
   return res.json();
 }
 
@@ -22,7 +22,7 @@ console.log({post})
 
 
   const { error, loading, data } = useQuery(myPost);
-  if (error) return <div className={styles.error}><h1 className="text-center text-xl font-bold">Something went wrong.</h1></div>
+  if (error) return <div className={styles.error}><h1 className="text-center text-xl font-bold">Something went wrong...</h1></div>
   if (loading) return <div className={styles.loading}><div className="flex items-center justify-center space-x-2 animate-pulse pt-20">
     <div className="w-4 h-4 bg-blue-400 rounded-full"></div>
     <div className="w-4 h-4 bg-blue-400 rounded-full"></div>

@@ -4,7 +4,7 @@ import gql from "graphql-tag";
 import styles from "../../styles/Home.module.css";
 
 const fetchURL = async () => {
-  const res = await fetch('https://grp.akm.mybluehostin.me/dare2solve/');
+  const res = await fetch('https://dare2solve.com/');
   return res.json();
 }
 

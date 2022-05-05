@@ -6,7 +6,7 @@ import Script from "next/script"
 import Image from "next/image"
 
 const fetchURL = async () => {
-  const res = await fetch('https://grp.akm.mybluehostin.me/dare2solve/');
+  const res = await fetch('https://dare2solve.com/');
   return res.json();
 }
 
