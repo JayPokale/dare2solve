@@ -57,7 +57,7 @@ const About = () => {
             </div>
           </div>
           <div className="relative flex md:w-1/3 w-full md:h-full h-1/3 bg-black">
-            <div className={styles.aboutRight}><Image className="rounded-full" src="/aboutMe.jpg " alt="About Me" width="1000" height="1000" /></div>
+            <div className={styles.aboutRight}><Image className="rounded-full" src="/aboutMe.png" alt="About Me" width="1000" height="1000" /></div>
             <div className="absolute flex justify-center md:bottom-2 md:top-auto top-2 right-2">
               <a href="https://www.facebook.com/jay.pokale.35/" className="mr-6 text-gray-400 hover:text-gray-100">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
