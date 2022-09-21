@@ -4,21 +4,6 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-// const myPosts = gql`
-//   query MyQuery {
-//     posts(where: { categoryName: "math" }, first: 3) {
-//       nodes {
-//         id
-//         featuredImage {
-//           node {
-//             sourceUrl
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
-
 export default function LatestPosts(props) {
   const { error, loading, data } = {...props.props};
 
