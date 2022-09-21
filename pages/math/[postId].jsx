@@ -4,11 +4,6 @@ import gql from "graphql-tag";
 import PostGrid from "../../components/PostGrid";
 import styles from "../../styles/Home.module.css";
 
-const fetchURL = async () => {
-  const res = await fetch(process.env.NEXT_PUBLIC_GRAPHQL_API);
-  return res.json();
-}
-
 export default function Posts({post}) {
 console.log({post})
   const router = useRouter();

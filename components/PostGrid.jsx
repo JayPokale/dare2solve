@@ -2,13 +2,7 @@ import { useQuery } from "@apollo/client";
 import gql from 'graphql-tag';
 import styles from "../styles/Home.module.css";
 import Link from "next/link"
-import Script from "next/script"
 import Image from "next/image"
-
-const fetchURL = async () => {
-  const res = await fetch(process.env.NEXT_PUBLIC_GRAPHQL_API);
-  return res.json();
-}
 
 const myPosts = gql`
 query MyQuery($after: String) {
