@@ -7,7 +7,7 @@ const About = () => {
       <div className={styles.minheight}>
         <div className="flex md:flex-row-reverse flex-col-reverse h-full">
           <div className="flex md:w-2/3 w-full md:h-full h-2/3 bg-white">
-            <div className="flex flex-col items-center md:w-3/4 md:pl-16 w-full md:mx-auto mx-4 my-auto">
+            <div className="flex flex-col items-center md:w-3/4 md:pl-16 w-full mx-10 md:mx-auto my-24 md:my-auto">
               <h1 className="lg:text-3xl sm:text-xl font-bold text-pink-600 z-10">About Dare2Solve</h1>
               <p className="sm:pt-4 lg:text-2xl sm:text-lg text-base text-justify">Dare2Solve Started in May 2021 during COVID-19 pandamic. First website is hosted in blogger.com later its uploaded on WordPress and now its on Vercel with next.js. <a className="text-pink-600 font-bold" href="#">Click here</a> to read journey of Dare2Solve from beginning.</p>
             </div>
@@ -48,7 +48,7 @@ const About = () => {
       <div className={styles.minheight}>
         <div className="flex md:flex-row flex-col-reverse h-full">
           <div className="flex md:w-2/3 w-full md:h-full h-2/3 bg-white">
-            <div className="flex flex-col items-center md:w-3/4 md:pr-16 w-full md:mx-auto mx-4 my-auto">
+            <div className="flex flex-col items-center md:w-3/4 md:pr-16 w-full mx-10 md:mx-auto my-24 md:my-auto">
               <h1 className="lg:text-3xl sm:text-xl font-bold text-pink-600 z-10">About Me</h1>
               <p className="sm:pt-4 lg:text-2xl sm:text-lg text-base text-justify">I am Jay Pokale, studying in GCOEY in
                 Mechanical. During COVID-19 pandamic, I started solving Mathematics questions along with web development. My
@@ -57,7 +57,7 @@ const About = () => {
             </div>
           </div>
           <div className="relative flex md:w-1/3 w-full md:h-full h-1/3 bg-black">
-            <div className={styles.aboutRight}><Image className="rounded-full" src="/aboutMe.jpg" alt="About Me" width="1000" height="1000" /></div>
+            <div className={styles.aboutRight}><Image className="rounded-full" src="/aboutMe.jpg " alt="About Me" width="1000" height="1000" /></div>
             <div className="absolute flex justify-center md:bottom-2 md:top-auto top-2 right-2">
               <a href="https://www.facebook.com/jay.pokale.35/" className="mr-6 text-gray-400 hover:text-gray-100">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
