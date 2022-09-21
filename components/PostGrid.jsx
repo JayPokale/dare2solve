@@ -6,7 +6,7 @@ import Script from "next/script"
 import Image from "next/image"
 
 const fetchURL = async () => {
-  const res = await fetch('https://dare2solve.com/');
+  const res = await fetch(process.env.NEXT_PUBLIC_GRAPHQL_API);
   return res.json();
 }
 
@@ -52,6 +52,7 @@ export default function Math() {
           </div>
           })}
         </div>
+        { data.posts.pageInfo.hasNextPage ? (
         <button onClick={() => {
           const { endCursor } = data.posts.pageInfo;
 
@@ -72,7 +73,8 @@ export default function Math() {
           id="loadButton"
           className="flex text-white m-auto bg-pink-600 hover:bg-pink-700 focus:ring-1 focus:ring-pink-300 font-medium rounded-full md:text-sm text-xs my-6 md:px-5 px-3 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >Load More</button>
-        <Script id="postgridscript" strategy="lazyOnload">{`if (!${data.posts.pageInfo.hasNextPage}) {document.getElementById('loadButton').style.display = 'none'}`}</Script>
+        ) : null
+      }
       </div>
     </div>
   )

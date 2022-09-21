@@ -151,7 +151,7 @@ function Footer() {
             </div>
             <div className="text-center p-6 bg-gray-200">
                 <span>© 2021 Copyright:</span>
-                <a className="text-gray-600 font-semibold" href=""> ABC123XYZ</a>
+                <a className="text-gray-600 font-semibold" href=""> Dare2Solve</a>
             </div>
         </footer>
     );

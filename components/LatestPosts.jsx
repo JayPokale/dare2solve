@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 const fetchURL = async () => {
-  const res = await fetch('https://dare2solve.com/');
+  const res = await fetch(process.env.NEXT_PUBLIC_GRAPHQL_API);
   return res.json();
 }
 
@@ -47,9 +47,9 @@ export default function LatestPosts() {
     <div className="my-10">
       <div className={styles.myHeading}><p className="mt-3 mx-5 font-sans font-bold text-xl">Latest 3 Posts:</p></div>
       <div className={styles.latestPosts}>
-        <div className="flex flex-wrap p-4 mx-auto postsList">
+        <div className="flex flex-col sm:flex-row items-center p-4 mx-auto postsList">
           {data.posts.nodes.map(post => {
-            return <div key={post.id} className="relative md:p-3 sm:p-2 p-1 w-1/3 h-auto ease-in-out duration-300">
+            return <div key={post.id} className="relative md:p-3 sm:p-2 p-1 sm:w-1/3 h-auto ease-in-out duration-300">
               <div className={styles.imageHover}><Link href={`/math/${post.id}`} passHref><Image className="relative shadow-lg cursor-pointer ease-in-out duration-200" src={post.featuredImage.node.sourceUrl} alt="" width="1000" height="1000" /></Link></div>
             </div>
           })}

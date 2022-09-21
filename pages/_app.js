@@ -4,7 +4,7 @@ import { ApolloProvider } from "@apollo/client";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 const apollo = new ApolloClient({
-  uri: "https://dare2solve.com/graphql",
+  uri: process.env.NEXT_PUBLIC_GRAPHQL_API_MAIN,
   cache: new InMemoryCache(),
 })
 
