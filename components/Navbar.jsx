@@ -36,18 +36,6 @@ function Navbar() {
                       About
                     </h6>
                   </Link>
-                  <Link href="/math" passHref>
-                    <h6 className="cursor-pointer text-black px-3 py-2 text-md hover:text-pink-600">
-                      Math
-                    </h6>
-                  </Link>
-
-                  <Link href="/website" passHref>
-                    <h6 className="cursor-pointer text-black px-3 py-2 text-md hover:text-pink-600">
-                      Website
-                    </h6>
-                  </Link>
-
                   <Link href="#footer" passHref>
                     <h6 className="cursor-pointer bg-pink-600 text-white px-3 py-2 rounded-md text-sm hover:bg-black">
                       Contact

@@ -2,23 +2,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-a{
+
+a {
   color: #db2777;
   font-weight: 700;
 }
+
 p {
   margin: 6px auto;
   text-indent: 50px;
 }
-img{
+
+img {
   margin: 0 auto;
 }
+
 h2 {
   display: block;
   font-size: 1.5em;
@@ -28,6 +32,7 @@ h2 {
   margin-right: 0;
   font-weight: bold;
 }
+
 h3 {
   display: block;
   font-size: 1.17em;
@@ -37,6 +42,7 @@ h3 {
   margin-right: 0;
   font-weight: bold;
 }
+
 h4 {
   display: block;
   font-size: 1em;
@@ -46,9 +52,10 @@ h4 {
   margin-right: 0;
   font-weight: bold;
 }
+
 h5 {
   display: block;
-  font-size: .83em;
+  font-size: 0.83em;
   margin-top: 1.67em;
   margin-bottom: 1.67em;
   margin-left: 0;
